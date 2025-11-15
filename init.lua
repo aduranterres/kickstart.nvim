@@ -144,6 +144,7 @@ vim.o.splitbelow = true
 -- Set tab width to 4
 vim.o.tabstop = 4
 vim.o.shiftwidth = 4
+vim.opt.expandtab = true
 
 -- Sets how neovim will display certain whitespace characters in the editor.
 --  See `:help 'list'`
@@ -831,6 +832,7 @@ require('lazy').setup({
       end,
       formatters_by_ft = {
         lua = { 'stylua' },
+        php = { 'php_cs_fixer' },
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
         --
